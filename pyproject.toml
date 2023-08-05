@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "gradio-gai"
+version = "0.1.0"
+description = ""
+authors = ["pilillo"]
+readme = "README.md"
+packages = [{include = "gradio_gai"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pillow = "^10.0.0"
+python-dotenv = "^1.0.0"
+requests = "^2.31.0"
+transformers = "^4.31.0"
+torch = "^2.0.1"
+gradio = "^3.39.0"
+diffusers = "^0.19.3"
+accelerate = "^0.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
