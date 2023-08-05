@@ -9,7 +9,6 @@ def summarizer(text):
     result = get_completion(text)
     return result[0]['summary_text']
 
-gr.close_all()
 demo = gr.Interface(fn=summarizer,
                     inputs=[gr.Textbox(label="Text", lines=6)],
                     outputs=[gr.Textbox(label="Summary", lines=3)],

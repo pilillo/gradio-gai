@@ -9,7 +9,6 @@ def captioner(image):
     result = get_completion(image)
     return result[0]['generated_text']
 
-gr.close_all()
 demo = gr.Interface(fn=captioner,
                     inputs=[gr.Image(label="Upload image", type="pil")],
                     outputs=[gr.Textbox(label="Caption")],

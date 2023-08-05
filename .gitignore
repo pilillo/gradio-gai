@@ -3,3 +3,4 @@
 !pyproject.toml
 !*.md
 !*.py
+!gradio_gai/*.py

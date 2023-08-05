@@ -9,7 +9,6 @@ def generator(text, negative_prompt, steps, guidance, width, height):
     result = pipeline(text, negative_prompt=negative_prompt, guidance_scale=guidance, num_inference_steps=steps, width=width, height=height).images[0]
     return result
 
-gr.close_all()
 demo = gr.Interface(fn=generator,
                     inputs=[
                         gr.Textbox(label="Image caption"),
